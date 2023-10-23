@@ -27,7 +27,6 @@ public class Main {
 
         while (true) {
             showMenu(menu, order);
-
         }
     }
 
@@ -123,25 +122,22 @@ public class Main {
 
     public static void showForzenCustardMenu(Order order) {
         Scanner sc = new Scanner(System.in);
-        Product[] forzenCustard = new Product[5];
+        Product[] forzenCustard = new Product[4];
         for (int i = 0; i < forzenCustard.length; i++) {
             forzenCustard[i] = new Product();
         }
-        forzenCustard[0].setName("ShackBurger   ");
-        forzenCustard[0].setPrice(6.9);
-        forzenCustard[0].setDescription("토마토, 양상추, 쉑소스가 토핑된 치즈버거");
-        forzenCustard[1].setName("SmokeShack    ");
-        forzenCustard[1].setPrice(8.9);
-        forzenCustard[1].setDescription("베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거");
-        forzenCustard[2].setName("Shroom Burger ");
-        forzenCustard[2].setPrice(9.4);
-        forzenCustard[2].setDescription("몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거");
-        forzenCustard[3].setName("Cheeseburger  ");
-        forzenCustard[3].setPrice(6.9);
-        forzenCustard[3].setDescription("포테이토 번과 비프패티, 치즈가 토핑된 치즈버거");
-        forzenCustard[4].setName("Hamburger     ");
-        forzenCustard[4].setPrice(5.4);
-        forzenCustard[4].setDescription("비프패티를 기반으로 야채가 들어간 기본버거");
+        forzenCustard[0].setName("CoffeeShake      ");
+        forzenCustard[0].setPrice(6.5);
+        forzenCustard[0].setDescription("로컬 로스팅 브랜드 앤트러사이트와 협업한 기간 한정 콜라보레이션 커피 쉐이크");
+        forzenCustard[1].setName("ClassicShakes    ");
+        forzenCustard[1].setPrice(6.5);
+        forzenCustard[1].setDescription("쫀득하고 진한 커스터드가 들어간 클래식 쉐이크");
+        forzenCustard[2].setName("Floats           ");
+        forzenCustard[2].setPrice(6.5);
+        forzenCustard[2].setDescription("부드러운 바닐라 커스터드와 톡톡 터지는 탄산이 만나 탄생한 색다른 음료");
+        forzenCustard[3].setName("Cup&Cones        ");
+        forzenCustard[3].setPrice(5.4);
+        forzenCustard[3].setDescription("매일 점포에서 신선하게 제조하는 쫀득하고 진한 아이스크림");
 
         System.out.println("\"SHACKSHACK BURGER 에 오신걸 환영합니다.\"");
         System.out.println("아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.\n");
@@ -170,25 +166,34 @@ public class Main {
 
     public static void showDrinksMenu(Order order) {
         Scanner sc = new Scanner(System.in);
-        Product[] drinks = new Product[5];
+        Product[] drinks = new Product[8];
         for (int i = 0; i < drinks.length; i++) {
             drinks[i] = new Product();
         }
-        drinks[0].setName("ShackBurger   ");
-        drinks[0].setPrice(6.9);
-        drinks[0].setDescription("토마토, 양상추, 쉑소스가 토핑된 치즈버거");
-        drinks[1].setName("SmokeShack    ");
-        drinks[1].setPrice(8.9);
-        drinks[1].setDescription("베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거");
-        drinks[2].setName("Shroom Burger ");
-        drinks[2].setPrice(9.4);
-        drinks[2].setDescription("몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거");
-        drinks[3].setName("Cheeseburger  ");
-        drinks[3].setPrice(6.9);
-        drinks[3].setDescription("포테이토 번과 비프패티, 치즈가 토핑된 치즈버거");
-        drinks[4].setName("Hamburger     ");
-        drinks[4].setPrice(5.4);
-        drinks[4].setDescription("비프패티를 기반으로 야채가 들어간 기본버거");
+        drinks[0].setName("RaspberryLemonade ");
+        drinks[0].setPrice(4.8);
+        drinks[0].setDescription("쉐이크쉑 시그니처 레몬에이드에 상큼 달콤한 라즈베리가 더해진 시즌 한정 레몬에이드");
+        drinks[1].setName("Lemonade          ");
+        drinks[1].setPrice(4.3);
+        drinks[1].setDescription("매장에서 직접 만드는 상큼한 레몬에이드");
+        drinks[2].setName("FreshBrewedIcedTea");
+        drinks[2].setPrice(3.5);
+        drinks[2].setDescription("직접 유기농 홍차를 우려낸 아이스 티");
+        drinks[3].setName("Fifty/Fifty       ");
+        drinks[3].setPrice(3.8);
+        drinks[3].setDescription("레몬에이드와 유기농 홍차를 우려낸 아이스 티가 만나 탄생한 쉐이크쉑의 시그니처 음료");
+        drinks[4].setName("FountainSoda      ");
+        drinks[4].setPrice(2.9);
+        drinks[4].setDescription("코카콜라, 코카콜라 제로, 스프라이트, 환타 오렌지, 환타 그레이프, 환타 파인애플");
+        drinks[5].setName("AbitaRootBeer     ");
+        drinks[5].setPrice(4.8);
+        drinks[5].setDescription("청량감 있는 독특한 미국식 무알콜 탄산음료");
+        drinks[6].setName("HotTea            ");
+        drinks[6].setPrice(3.4);
+        drinks[6].setDescription("보성 유기농 찻잎을 우려낸 녹차, 홍차, 페퍼민트 & 레몬그라스");
+        drinks[7].setName("Coffee            ");
+        drinks[7].setPrice(3.0);
+        drinks[7].setDescription("쉑 블렌드 원두를 사용한 밸런스 좋은 드립 커피");
 
         System.out.println("\"SHACKSHACK BURGER 에 오신걸 환영합니다.\"");
         System.out.println("아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.\n");
@@ -217,25 +222,16 @@ public class Main {
 
     public static void showBeerMenu(Order order) {
         Scanner sc = new Scanner(System.in);
-        Product[] beer = new Product[5];
+        Product[] beer = new Product[2];
         for (int i = 0; i < beer.length; i++) {
             beer[i] = new Product();
         }
-        beer[0].setName("ShackBurger   ");
-        beer[0].setPrice(6.9);
-        beer[0].setDescription("토마토, 양상추, 쉑소스가 토핑된 치즈버거");
-        beer[1].setName("SmokeShack    ");
-        beer[1].setPrice(8.9);
-        beer[1].setDescription("베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거");
-        beer[2].setName("Shroom Burger ");
-        beer[2].setPrice(9.4);
-        beer[2].setDescription("몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거");
-        beer[3].setName("Cheeseburger  ");
-        beer[3].setPrice(6.9);
-        beer[3].setDescription("포테이토 번과 비프패티, 치즈가 토핑된 치즈버거");
-        beer[4].setName("Hamburger     ");
-        beer[4].setPrice(5.4);
-        beer[4].setDescription("비프패티를 기반으로 야채가 들어간 기본버거");
+        beer[0].setName("ShackMeisterAle   ");
+        beer[0].setPrice(9.8);
+        beer[0].setDescription("쉐이크쉑 버거를위해 뉴욕 브루클린 브루어리에서 특별히 양조한 에일 맥주");
+        beer[1].setName("MagpieBrewingCo.  ");
+        beer[1].setPrice(6.8);
+        beer[1].setDescription("제주도 브루어리에서 전량 생산되는 맥파이 맥주");
 
         System.out.println("\"SHACKSHACK BURGER 에 오신걸 환영합니다.\"");
         System.out.println("아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.\n");
